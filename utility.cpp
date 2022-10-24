@@ -19,14 +19,9 @@ bool isEven(int x) {
 bool isPrime(int x) { 
   bool prime = true;
 
-  if (x == 0 || x == 1)
+  if (x == 0 || x == 1 || x < 0)
   {
     prime = false;
-  }
-
-  if (x < 0)
-  {
-    x = x * -1;
   }
   
   for (int i = 2; i < x; i++)
