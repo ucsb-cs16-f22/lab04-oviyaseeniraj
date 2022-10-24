@@ -11,10 +11,10 @@
 // these functions
 
 bool isOdd(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  return (x % 2 != 0);
 }
 bool isEven(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  return (x % 2 == 0);
 }
 bool isPrime(int x) { 
   return false;  // REPLACE THIS STUB WITH REAL CODE
