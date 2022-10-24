@@ -17,5 +17,27 @@ bool isEven(int x) {
   return (x % 2 == 0);
 }
 bool isPrime(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  bool prime = true;
+
+  if (x == 0 || x == 1)
+  {
+    prime = false;
+  }
+
+  if (x < 0)
+  {
+    x = x * -1;
+  }
+  
+  for (int i = 2; i < x; i++)
+  {
+    if (x % i == 0)
+    {
+      prime = false;
+    }
+
+  }
+
+  return prime;
+
 }
